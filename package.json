@@ -1,0 +1,22 @@
+{
+  "name": "miyagi-msw",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "esbuild mocks.js --bundle --outfile=build/mocks.js && miyagi start"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@miyagi/core": "^3.4.10",
+    "esbuild": "^0.23.1",
+    "msw": "^2.4.7",
+    "twig": "^1.17.1"
+  },
+  "msw": {
+    "workerDirectory": [
+      ""
+    ]
+  }
+}
